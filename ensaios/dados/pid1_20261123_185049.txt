@@ -1,0 +1,268 @@
+# PID levitador (Uno) - motor PARADO. Envie 'z' (bola no fundo) e depois 'a'.
+# Kp=56.00 Ki=49.00 Kd=16.00 | u0=122.00 | N=10.0 | fundo=60.0 cm | fPWM=300 Hz | ref=potenciometro
+# ganhos em PWM/m (mesmas unidades do Simulink)
+t=   1.02 s | ref= 28.1 cm | h=  0.0 cm | erro=  28.1 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   1.06 s | ref= 27.9 cm | h= 32.6 cm | erro=  -4.8 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   1.10 s | ref= 27.6 cm | h= 32.6 cm | erro=  -5.0 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   1.14 s | ref= 27.4 cm | h= 32.6 cm | erro=  -5.2 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   1.18 s | ref= 27.2 cm | h= 32.6 cm | erro=  -5.4 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   1.22 s | ref= 27.0 cm | h= 32.6 cm | erro=  -5.7 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   1.26 s | ref= 26.8 cm | h= 32.6 cm | erro=  -5.9 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   1.30 s | ref= 26.6 cm | h= 32.6 cm | erro=  -6.1 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   1.34 s | ref= 26.4 cm | h= 32.6 cm | erro=  -6.3 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   1.38 s | ref= 26.2 cm | h= 32.6 cm | erro=  -6.5 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   1.42 s | ref= 26.0 cm | h= 32.5 cm | erro=  -6.5 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   1.46 s | ref= 25.8 cm | h= 32.5 cm | erro=  -6.7 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   1.50 s | ref= 25.6 cm | h= 32.5 cm | erro=  -6.9 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   1.54 s | ref= 25.5 cm | h= 32.5 cm | erro=  -7.1 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   1.58 s | ref= 25.3 cm | h= 32.5 cm | erro=  -7.2 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   1.62 s | ref= 25.1 cm | h= 32.5 cm | erro=  -7.4 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   1.66 s | ref= 24.9 cm | h= 32.5 cm | erro=  -7.6 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   1.70 s | ref= 24.8 cm | h= 32.6 cm | erro=  -7.9 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   1.74 s | ref= 24.6 cm | h= 32.6 cm | erro=  -8.0 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   1.78 s | ref= 24.5 cm | h= 32.6 cm | erro=  -8.2 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   1.82 s | ref= 24.3 cm | h= 32.6 cm | erro=  -8.4 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   1.86 s | ref= 24.1 cm | h= 32.6 cm | erro=  -8.5 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+>> z
+t=   1.90 s | ref= 24.0 cm | h= 32.6 cm | erro=  -8.7 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   1.94 s | ref= 23.8 cm | h= 32.6 cm | erro=  -8.8 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+# leituras do zero: min=26.5 max=27.5 cm
+# zero: distancia ate a bola no fundo = 27.4 cm | referencia de 2.0 a 23.4 cm
+t=   3.03 s | ref= 10.0 cm | h=  0.0 cm | erro=  10.0 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   3.07 s | ref=  9.9 cm | h=  0.0 cm | erro=   9.9 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   3.11 s | ref=  9.9 cm | h=  0.0 cm | erro=   9.9 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   3.15 s | ref=  9.9 cm | h=  0.0 cm | erro=   9.9 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   3.19 s | ref=  9.8 cm | h=  0.9 cm | erro=   8.9 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   3.23 s | ref=  9.8 cm | h=  0.9 cm | erro=   8.9 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   3.27 s | ref=  9.7 cm | h=  0.0 cm | erro=   9.7 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   3.31 s | ref=  9.7 cm | h=  0.0 cm | erro=   9.7 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   3.35 s | ref=  9.7 cm | h=  0.0 cm | erro=   9.7 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   3.39 s | ref=  9.6 cm | h=  0.0 cm | erro=   9.6 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   3.43 s | ref=  9.6 cm | h= -0.1 cm | erro=   9.7 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   3.47 s | ref=  9.5 cm | h= -0.1 cm | erro=   9.6 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   3.51 s | ref=  9.5 cm | h= -0.1 cm | erro=   9.6 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   3.55 s | ref=  9.4 cm | h= -0.1 cm | erro=   9.5 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   3.59 s | ref=  9.4 cm | h= -0.1 cm | erro=   9.5 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   3.63 s | ref=  9.4 cm | h= -0.1 cm | erro=   9.5 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   3.67 s | ref=  9.3 cm | h=  0.0 cm | erro=   9.3 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   3.71 s | ref=  9.3 cm | h=  0.0 cm | erro=   9.3 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   3.75 s | ref=  9.3 cm | h=  0.0 cm | erro=   9.3 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   3.79 s | ref=  9.2 cm | h=  0.0 cm | erro=   9.2 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   3.83 s | ref=  9.2 cm | h=  0.0 cm | erro=   9.2 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   3.87 s | ref=  9.2 cm | h=  0.0 cm | erro=   9.2 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   3.91 s | ref=  9.2 cm | h=  0.0 cm | erro=   9.2 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   3.95 s | ref=  9.1 cm | h=  0.9 cm | erro=   8.3 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   3.99 s | ref=  9.1 cm | h=  0.9 cm | erro=   8.2 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   4.03 s | ref=  9.1 cm | h= -0.1 cm | erro=   9.2 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   4.07 s | ref=  9.1 cm | h= -0.1 cm | erro=   9.2 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   4.11 s | ref=  9.0 cm | h= -0.1 cm | erro=   9.2 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   4.15 s | ref=  9.0 cm | h= -0.1 cm | erro=   9.1 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   4.19 s | ref=  9.0 cm | h= -0.1 cm | erro=   9.1 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   4.23 s | ref=  9.0 cm | h= -0.1 cm | erro=   9.1 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   4.27 s | ref=  8.9 cm | h= -0.1 cm | erro=   9.0 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   4.31 s | ref=  8.9 cm | h=  0.0 cm | erro=   8.9 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   4.35 s | ref=  8.9 cm | h=  0.0 cm | erro=   8.9 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   4.39 s | ref=  8.9 cm | h=  0.0 cm | erro=   8.9 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   4.43 s | ref=  8.8 cm | h=  0.0 cm | erro=   8.8 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+>> u0 144
+t=   4.47 s | ref=  8.8 cm | h=  0.0 cm | erro=   8.8 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   4.51 s | ref=  8.8 cm | h=  0.0 cm | erro=   8.8 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+# Kp=56.00 Ki=49.00 Kd=16.00 | u0=144.00 | N=10.0 | fundo=27.4 cm | fPWM=300 Hz | ref=potenciometro
+t=   4.55 s | ref=  8.8 cm | h=  0.0 cm | erro=   8.8 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   4.59 s | ref=  8.8 cm | h=  0.0 cm | erro=   8.8 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   4.63 s | ref=  8.7 cm | h=  0.0 cm | erro=   8.7 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   4.67 s | ref=  8.7 cm | h= -0.1 cm | erro=   8.8 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+>> r 10
+t=   4.71 s | ref=  8.7 cm | h= -0.1 cm | erro=   8.8 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+# referencia fixa = 10.0 cm
+t=   4.74 s | ref= 10.0 cm | h= -0.1 cm | erro=  10.1 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   4.78 s | ref= 10.0 cm | h=  0.8 cm | erro=   9.2 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   4.82 s | ref= 10.0 cm | h=  0.8 cm | erro=   9.2 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   4.87 s | ref= 10.0 cm | h=  0.8 cm | erro=   9.2 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+t=   4.91 s | ref= 10.0 cm | h=  0.8 cm | erro=   9.2 cm | PWM=  0.00 | Kp= 56.00 Ki= 49.00 Kd= 16.00 | parado
+>> kp 60
+# Kp=60.00 Ki=49.00 Kd=16.00 | u0=144.00 | N=10.0 | fundo=27.4 cm | fPWM=300 Hz | ref=10.0 cm
+t=   4.95 s | ref= 10.0 cm | h=  0.8 cm | erro=   9.2 cm | PWM=  0.00 | Kp= 60.00 Ki= 49.00 Kd= 16.00 | parado
+t=   4.99 s | ref= 10.0 cm | h=  0.9 cm | erro=   9.1 cm | PWM=  0.00 | Kp= 60.00 Ki= 49.00 Kd= 16.00 | parado
+t=   5.03 s | ref= 10.0 cm | h=  0.9 cm | erro=   9.1 cm | PWM=  0.00 | Kp= 60.00 Ki= 49.00 Kd= 16.00 | parado
+t=   5.07 s | ref= 10.0 cm | h=  0.9 cm | erro=   9.1 cm | PWM=  0.00 | Kp= 60.00 Ki= 49.00 Kd= 16.00 | parado
+t=   5.11 s | ref= 10.0 cm | h=  0.9 cm | erro=   9.1 cm | PWM=  0.00 | Kp= 60.00 Ki= 49.00 Kd= 16.00 | parado
+>> ki 15
+t=   5.14 s | ref= 10.0 cm | h=  0.9 cm | erro=   9.1 cm | PWM=  0.00 | Kp= 60.00 Ki= 49.00 Kd= 16.00 | parado
+# Kp=60.00 Ki=15.00 Kd=16.00 | u0=144.00 | N=10.0 | fundo=27.4 cm | fPWM=300 Hz | ref=10.0 cm
+t=   5.18 s | ref= 10.0 cm | h=  0.9 cm | erro=   9.1 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 16.00 | parado
+t=   5.22 s | ref= 10.0 cm | h=  0.9 cm | erro=   9.1 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 16.00 | parado
+t=   5.26 s | ref= 10.0 cm | h=  0.9 cm | erro=   9.1 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 16.00 | parado
+t=   5.30 s | ref= 10.0 cm | h=  0.8 cm | erro=   9.2 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 16.00 | parado
+>> kd 25
+t=   5.34 s | ref= 10.0 cm | h=  0.8 cm | erro=   9.2 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 16.00 | parado
+# Kp=60.00 Ki=15.00 Kd=25.00 | u0=144.00 | N=10.0 | fundo=27.4 cm | fPWM=300 Hz | ref=10.0 cm
+t=   5.39 s | ref= 10.0 cm | h=  0.8 cm | erro=   9.2 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+t=   5.43 s | ref= 10.0 cm | h=  0.8 cm | erro=   9.2 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+t=   5.47 s | ref= 10.0 cm | h=  0.8 cm | erro=   9.2 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+t=   5.51 s | ref= 10.0 cm | h=  0.8 cm | erro=   9.2 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+>> a
+t=   5.55 s | ref= 10.0 cm | h=  0.8 cm | erro=   9.2 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+# PID ligado
+t=   5.59 s | ref= 10.0 cm | h=  0.8 cm | erro=   9.2 cm | PWM=149.55 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   5.63 s | ref= 10.0 cm | h=  0.9 cm | erro=   9.1 cm | PWM=149.41 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   5.66 s | ref= 10.0 cm | h=  0.9 cm | erro=   9.1 cm | PWM=149.51 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   5.70 s | ref= 10.0 cm | h=  0.9 cm | erro=   9.1 cm | PWM=149.61 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   5.74 s | ref= 10.0 cm | h=  0.9 cm | erro=   9.1 cm | PWM=149.69 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   5.78 s | ref= 10.0 cm | h=  0.0 cm | erro=  10.0 cm | PWM=151.85 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   5.82 s | ref= 10.0 cm | h=  0.0 cm | erro=  10.0 cm | PWM=151.48 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   5.86 s | ref= 10.0 cm | h=  0.0 cm | erro=  10.0 cm | PWM=151.23 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   5.91 s | ref= 10.0 cm | h=  0.0 cm | erro=  10.0 cm | PWM=151.07 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   5.95 s | ref= 10.0 cm | h=  0.0 cm | erro=  10.0 cm | PWM=150.97 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   5.99 s | ref= 10.0 cm | h=  1.1 cm | erro=   8.9 cm | PWM=148.37 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   6.03 s | ref= 10.0 cm | h=  1.1 cm | erro=   8.9 cm | PWM=148.89 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   6.07 s | ref= 10.0 cm | h=  1.1 cm | erro=   8.9 cm | PWM=149.27 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   6.11 s | ref= 10.0 cm | h=  1.1 cm | erro=   8.9 cm | PWM=149.56 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   6.15 s | ref= 10.0 cm | h=  1.1 cm | erro=   8.9 cm | PWM=149.74 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   6.18 s | ref= 10.0 cm | h=  1.1 cm | erro=   8.9 cm | PWM=149.93 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   6.22 s | ref= 10.0 cm | h=  1.1 cm | erro=   8.9 cm | PWM=150.07 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   6.26 s | ref= 10.0 cm | h=  1.2 cm | erro=   8.8 cm | PWM=149.98 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   6.30 s | ref= 10.0 cm | h=  1.2 cm | erro=   8.8 cm | PWM=150.13 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   6.34 s | ref= 10.0 cm | h=  0.9 cm | erro=   9.1 cm | PWM=150.94 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   6.39 s | ref= 10.0 cm | h=  0.3 cm | erro=   9.7 cm | PWM=152.29 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   6.43 s | ref= 10.0 cm | h=  0.9 cm | erro=   9.1 cm | PWM=150.58 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   6.47 s | ref= 10.0 cm | h=  1.2 cm | erro=   8.8 cm | PWM=149.97 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   6.51 s | ref= 10.0 cm | h=  1.2 cm | erro=   8.8 cm | PWM=150.20 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   6.55 s | ref= 10.0 cm | h=  1.2 cm | erro=   8.8 cm | PWM=150.37 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   6.59 s | ref= 10.0 cm | h=  1.1 cm | erro=   8.9 cm | PWM=150.76 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   6.63 s | ref= 10.0 cm | h=  1.1 cm | erro=   8.9 cm | PWM=150.83 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   6.67 s | ref= 10.0 cm | h=  1.1 cm | erro=   8.9 cm | PWM=150.89 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   6.71 s | ref= 10.0 cm | h=  1.1 cm | erro=   8.9 cm | PWM=150.95 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   6.75 s | ref= 10.0 cm | h=  1.1 cm | erro=   8.9 cm | PWM=151.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   6.79 s | ref= 10.0 cm | h=  1.1 cm | erro=   8.9 cm | PWM=151.06 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   6.82 s | ref= 10.0 cm | h=  1.1 cm | erro=   8.9 cm | PWM=151.11 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   6.86 s | ref= 10.0 cm | h=  1.1 cm | erro=   8.9 cm | PWM=151.13 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   6.91 s | ref= 10.0 cm | h=  1.2 cm | erro=   8.8 cm | PWM=150.99 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   6.95 s | ref= 10.0 cm | h=  1.2 cm | erro=   8.8 cm | PWM=151.09 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   6.99 s | ref= 10.0 cm | h=  0.3 cm | erro=   9.7 cm | PWM=153.23 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   7.03 s | ref= 10.0 cm | h=  0.3 cm | erro=   9.7 cm | PWM=152.88 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   7.07 s | ref= 10.0 cm | h=  0.3 cm | erro=   9.7 cm | PWM=152.68 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   7.11 s | ref= 10.0 cm | h=  0.3 cm | erro=   9.7 cm | PWM=152.52 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   7.14 s | ref= 10.0 cm | h=  1.8 cm | erro=   8.2 cm | PWM=148.90 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   7.18 s | ref= 10.0 cm | h=  1.8 cm | erro=   8.2 cm | PWM=149.59 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   7.22 s | ref= 10.0 cm | h=  1.1 cm | erro=   8.9 cm | PWM=151.78 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   7.26 s | ref= 10.0 cm | h=  1.1 cm | erro=   8.9 cm | PWM=151.80 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   7.30 s | ref= 10.0 cm | h=  1.4 cm | erro=   8.6 cm | PWM=151.13 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   7.35 s | ref= 10.0 cm | h=  2.2 cm | erro=   7.8 cm | PWM=149.22 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   7.39 s | ref= 10.0 cm | h=  2.2 cm | erro=   7.8 cm | PWM=149.81 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   7.43 s | ref= 10.0 cm | h=  1.6 cm | erro=   8.4 cm | PWM=151.64 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   7.47 s | ref= 10.0 cm | h=  1.6 cm | erro=   8.4 cm | PWM=151.67 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   7.51 s | ref= 10.0 cm | h=  2.2 cm | erro=   7.8 cm | PWM=150.27 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   7.55 s | ref= 10.0 cm | h=  2.2 cm | erro=   7.8 cm | PWM=150.61 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   7.59 s | ref= 10.0 cm | h=  2.2 cm | erro=   7.8 cm | PWM=150.87 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   7.63 s | ref= 10.0 cm | h=  1.8 cm | erro=   8.2 cm | PWM=152.21 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   7.66 s | ref= 10.0 cm | h=  2.6 cm | erro=   7.4 cm | PWM=150.03 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   7.70 s | ref= 10.0 cm | h=  2.9 cm | erro=   7.1 cm | PWM=149.77 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   7.74 s | ref= 10.0 cm | h=  2.9 cm | erro=   7.1 cm | PWM=150.20 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   7.78 s | ref= 10.0 cm | h=  2.9 cm | erro=   7.1 cm | PWM=150.52 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   7.82 s | ref= 10.0 cm | h=  2.9 cm | erro=   7.1 cm | PWM=150.72 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   7.86 s | ref= 10.0 cm | h=  2.9 cm | erro=   7.1 cm | PWM=150.91 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   7.91 s | ref= 10.0 cm | h=  2.8 cm | erro=   7.2 cm | PWM=151.35 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   7.95 s | ref= 10.0 cm | h=  2.8 cm | erro=   7.2 cm | PWM=151.41 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   7.99 s | ref= 10.0 cm | h=  2.8 cm | erro=   7.2 cm | PWM=151.42 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   8.03 s | ref= 10.0 cm | h=  3.7 cm | erro=   6.3 cm | PWM=149.39 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   8.06 s | ref= 10.0 cm | h=  4.0 cm | erro=   6.0 cm | PWM=149.19 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   8.10 s | ref= 10.0 cm | h=  4.9 cm | erro=   5.1 cm | PWM=147.61 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   8.15 s | ref= 10.0 cm | h=  4.9 cm | erro=   5.1 cm | PWM=148.42 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   8.19 s | ref= 10.0 cm | h=  3.7 cm | erro=   6.3 cm | PWM=151.80 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   8.23 s | ref= 10.0 cm | h=  3.7 cm | erro=   6.3 cm | PWM=151.65 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   8.27 s | ref= 10.0 cm | h=  3.7 cm | erro=   6.3 cm | PWM=151.55 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   8.31 s | ref= 10.0 cm | h=  3.8 cm | erro=   6.2 cm | PWM=151.24 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   8.35 s | ref= 10.0 cm | h=  4.1 cm | erro=   5.9 cm | PWM=150.56 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   8.39 s | ref= 10.0 cm | h=  4.4 cm | erro=   5.6 cm | PWM=150.04 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   8.43 s | ref= 10.0 cm | h=  4.1 cm | erro=   5.9 cm | PWM=151.01 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   8.47 s | ref= 10.0 cm | h=  3.1 cm | erro=   6.9 cm | PWM=153.41 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   8.51 s | ref= 10.0 cm | h=  3.1 cm | erro=   6.9 cm | PWM=152.97 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   8.55 s | ref= 10.0 cm | h=  4.0 cm | erro=   6.0 cm | PWM=150.58 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   8.59 s | ref= 10.0 cm | h=  4.6 cm | erro=   5.4 cm | PWM=149.42 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   8.63 s | ref= 10.0 cm | h=  4.9 cm | erro=   5.1 cm | PWM=149.20 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   8.66 s | ref= 10.0 cm | h=  4.6 cm | erro=   5.4 cm | PWM=150.39 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   8.71 s | ref= 10.0 cm | h=  4.3 cm | erro=   5.7 cm | PWM=151.31 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   8.74 s | ref= 10.0 cm | h=  4.3 cm | erro=   5.7 cm | PWM=151.32 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   8.78 s | ref= 10.0 cm | h=  4.9 cm | erro=   5.1 cm | PWM=149.95 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   8.82 s | ref= 10.0 cm | h=  5.2 cm | erro=   4.8 cm | PWM=149.53 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   8.86 s | ref= 10.0 cm | h=  4.9 cm | erro=   5.1 cm | PWM=150.66 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   8.90 s | ref= 10.0 cm | h=  4.9 cm | erro=   5.1 cm | PWM=150.79 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   8.94 s | ref= 10.0 cm | h=  4.9 cm | erro=   5.1 cm | PWM=150.90 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   8.98 s | ref= 10.0 cm | h=  5.0 cm | erro=   5.0 cm | PWM=150.73 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   9.02 s | ref= 10.0 cm | h=  5.0 cm | erro=   5.0 cm | PWM=150.81 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   9.06 s | ref= 10.0 cm | h=  6.3 cm | erro=   3.7 cm | PWM=147.88 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   9.10 s | ref= 10.0 cm | h=  6.3 cm | erro=   3.7 cm | PWM=148.60 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   9.15 s | ref= 10.0 cm | h=  6.3 cm | erro=   3.7 cm | PWM=149.12 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   9.19 s | ref= 10.0 cm | h=  6.8 cm | erro=   3.2 cm | PWM=148.19 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   9.23 s | ref= 10.0 cm | h=  7.1 cm | erro=   2.9 cm | PWM=147.97 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   9.27 s | ref= 10.0 cm | h=  8.7 cm | erro=   1.3 cm | PWM=144.68 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   9.31 s | ref= 10.0 cm | h=  9.1 cm | erro=   0.9 cm | PWM=145.12 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   9.35 s | ref= 10.0 cm | h=  9.1 cm | erro=   0.9 cm | PWM=146.16 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   9.38 s | ref= 10.0 cm | h=  9.4 cm | erro=   0.6 cm | PWM=146.16 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   9.42 s | ref= 10.0 cm | h= 11.0 cm | erro=  -1.0 cm | PWM=142.95 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   9.46 s | ref= 10.0 cm | h= 11.3 cm | erro=  -1.3 cm | PWM=143.49 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   9.50 s | ref= 10.0 cm | h= 11.3 cm | erro=  -1.3 cm | PWM=144.59 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   9.54 s | ref= 10.0 cm | h= 11.7 cm | erro=  -1.7 cm | PWM=144.60 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   9.58 s | ref= 10.0 cm | h= 14.0 cm | erro=  -4.0 cm | PWM=139.66 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   9.62 s | ref= 10.0 cm | h= 16.7 cm | erro=  -6.7 cm | PWM=134.92 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   9.66 s | ref= 10.0 cm | h= 17.0 cm | erro=  -7.0 cm | PWM=136.71 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   9.70 s | ref= 10.0 cm | h= 17.7 cm | erro=  -7.7 cm | PWM=137.10 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   9.74 s | ref= 10.0 cm | h= 18.4 cm | erro=  -8.4 cm | PWM=137.21 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   9.78 s | ref= 10.0 cm | h= 19.9 cm | erro=  -9.9 cm | PWM=135.14 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   9.82 s | ref= 10.0 cm | h= 20.6 cm | erro= -10.6 cm | PWM=135.50 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   9.86 s | ref= 10.0 cm | h= 22.2 cm | erro= -12.2 cm | PWM=133.33 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   9.90 s | ref= 10.0 cm | h= 22.8 cm | erro= -12.8 cm | PWM=133.78 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+t=   9.94 s | ref= 10.0 cm | h= 22.8 cm | erro= -12.8 cm | PWM=135.48 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+>> s
+>> s
+>> s
+t=   9.98 s | ref= 10.0 cm | h= 23.8 cm | erro= -13.8 cm | PWM=134.38 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | auto
+# PARADO
+t=  10.02 s | ref= 10.0 cm | h= 24.1 cm | erro= -14.1 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+t=  10.06 s | ref= 10.0 cm | h= 24.1 cm | erro= -14.1 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+# PARADO
+t=  10.10 s | ref= 10.0 cm | h= 24.1 cm | erro= -14.1 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+# PARADO
+t=  10.14 s | ref= 10.0 cm | h= 23.1 cm | erro= -13.1 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+t=  10.18 s | ref= 10.0 cm | h= 22.8 cm | erro= -12.8 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+t=  10.22 s | ref= 10.0 cm | h= 22.0 cm | erro= -12.0 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+t=  10.26 s | ref= 10.0 cm | h=
+19.7 cm | erro=  -9.7 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+t=  10.30 s | ref= 10.0 cm | h= 18.4 cm | erro=  -8.4 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+t=  10.34 s | ref= 10.0 cm | h= 18.1 cm | erro=  -8.1 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+t=  10.38 s | ref= 10.0 cm | h= 15.7 cm | erro=  -5.7 cm | PWM=
+ 0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+t=  10.43 s | ref= 10.0 cm | h= 12.2 cm | erro=  -2.2 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+t=  10.47 s | ref= 10.0 cm | h=  9.4 cm | erro=   0.6 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+t=  10.51 s | ref= 10.0 cm | h=  6.5 cm | erro=   3.5 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+t=  10.55 s | ref= 10.0 cm | h=
+ 5.2 cm | erro=   4.8 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+t=  10.59 s | ref= 10.0 cm | h=  3.7 cm | erro=   6.3 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+t=  10.63 s | ref= 10.0 cm | h=  3.7 cm | erro=   6.3 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+t=  10.66 s | ref= 10.0 cm | h=  6.2 cm | erro=   3.8 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd=
+25.00 | parado
+t=  10.70 s | ref= 10.0 cm | h=  6.2 cm | erro=   3.8 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+t=  10.74 s | ref= 10.0 cm | h=  6.2 cm | erro=   3.8 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+t=  10.78 s | ref= 10.0 cm | h=  5.2 cm | erro=   4.8 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+t=  10.82 s | ref= 10.0 cm | h=
+ 4.0 cm | erro=   6.0 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+t=  10.86 s | ref= 10.0 cm | h=  3.5 cm | erro=   6.5 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+t=  10.90 s | ref= 10.0 cm | h=  3.5 cm | erro=   6.5 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+t=  10.94 s | ref= 10.0 cm | h=  3.5 cm | erro=   6.5 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd=
+25.00 | parado
+t=  10.98 s | ref= 10.0 cm | h=  3.2 cm | erro=   6.8 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+t=  11.02 s | ref= 10.0 cm | h=  3.1 cm | erro=   6.9 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+t=  11.06 s | ref= 10.0 cm | h=  3.1 cm | erro=   6.9 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+t=  11.10 s | ref= 10.0 cm | h=
+ 3.1 cm | erro=   6.9 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+t=  11.15 s | ref= 10.0 cm | h=  2.5 cm | erro=   7.5 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+t=  11.19 s | ref= 10.0 cm | h=  2.5 cm | erro=   7.5 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+t=  11.23 s | ref= 10.0 cm | h=  2.5 cm | erro=   7.5 cm | PWM=
+ 0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+t=  11.27 s | ref= 10.0 cm | h=  2.2 cm | erro=   7.8 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+t=  11.31 s | ref= 10.0 cm | h=  1.6 cm | erro=   8.4 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+t=  11.35 s | ref= 10.0 cm | h=  1.9 cm | erro=   8.1 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+t=  11.39 s | ref= 10.0 cm | h=
+ 1.9 cm | erro=   8.1 cm | PWM=  0.00 | Kp= 60.00 Ki= 15.00 Kd= 25.00 | parado
+t=  11.43 s | ref= 10.0 cm | h=  2.1 cm | erro=   7.9 cm | PWM=
